@@ -1,5 +1,5 @@
 make:
-	pacman -S hyprland kitty waybar xorg-server
+	pacman -S hyprland kitty waybar xorg-server mako
 	mkdir ~/scripts
 	cp -r scripts/* ~/scripts/
 	cp -r .config/* ~/.config/

@@ -17,20 +17,16 @@
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
         "pulseaudio",
-        "network",
+	"network",
         "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
-        "backlight",
-        "keyboard-state",
-        "sway/language",
-        "battery",
-        "battery#bat2",
-        "clock",
-        "tray"
+	"backlight",
+	"battery",
+	"tray",
+        "clock"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -110,9 +106,9 @@
         // }
     },
     "clock": {
-        // "timezone": "America/New_York",
+        "timezone": "Europe/London",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d-%m-%y}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -123,7 +119,7 @@
     },
     "temperature": {
         // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "hwmon-path": "/sys/class/hwmon/hwmon3/temp10_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
